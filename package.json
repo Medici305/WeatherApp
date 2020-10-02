@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "single web page where user inserts desired location and api returns the current weather",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Medici305/WeatherApp.git"
+  },
+  "author": "Medici",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Medici305/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/Medici305/WeatherApp#readme"
+}
