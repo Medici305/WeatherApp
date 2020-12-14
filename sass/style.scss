@@ -1,0 +1,67 @@
+@import "components/mixin/mixins";
+@import "components/placeholder/placeholders";
+@import "components/variable/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font : {
+    size: 18px;
+    weight: 300;
+    family: "Montserrat", sans serif;
+  }
+}
+
+header {
+  min-height: 30vh;
+  @include flex(flex, column, center, center);
+  border: 3px solid black;
+  @include backgroundImage("../resources/images/night_sky.jpg", center, cover);
+  h2 {
+    padding: 2rem;
+    color: #fff;
+    text-decoration: line-through;
+    font-weight: 300;
+  }
+  .time-display {
+    color: #fff;
+    font-weight: 700;
+  }
+  form {
+    padding: 2rem;
+    display: flex;
+    input {
+      font-size: 2rem;
+      padding: 0.5rem;
+      border: none;
+      width: 100%;
+      background: none;
+      border-bottom: 3px solid black;
+      outline: none;
+      color: #fff;
+    }
+    button {
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      background: black;
+      color: #fff;
+    }
+  }
+}
+
+.weather-display {
+  background: black;
+  min-height: 70vh;
+  @include flex();
+  .weather-card {
+    width: 50%;
+    height: 50%;
+    background: #fff;
+  }
+}

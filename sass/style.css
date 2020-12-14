@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Montserrat", sans serif;
+}
+
+header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  background-image: url("../resources/images/night_sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header h2 {
+  padding: 2rem;
+  color: #fff;
+  text-decoration: line-through;
+  font-weight: 300;
+}
+header .time-display {
+  color: #fff;
+  font-weight: 700;
+}
+header form {
+  padding: 2rem;
+  display: flex;
+}
+header form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  width: 100%;
+  background: none;
+  border-bottom: 3px solid black;
+  outline: none;
+  color: #fff;
+}
+header form button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: black;
+  color: #fff;
+}
+
+.weather-display {
+  background: black;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: none;
+}
+.weather-display .weather-card {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
