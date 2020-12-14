@@ -28,7 +28,13 @@ header h2 {
   text-decoration: line-through;
   font-weight: 300;
 }
+header .date-display {
+  padding: 0.5rem;
+  color: #7d7c7c;
+  font-weight: 500;
+}
 header .time-display {
+  padding: 0.5rem;
   color: #fff;
   font-weight: 700;
 }
@@ -57,16 +63,28 @@ header form button {
 
 .weather-display {
   background: black;
-  min-height: 70vh;
+  min-height: 66vh;
   display: flex;
   flex-direction: row;
-  justify-content: none;
-  align-items: none;
+  justify-content: center;
+  align-items: center;
 }
 .weather-display .weather-card {
-  width: 50%;
-  height: 50%;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fff;
+  flex: 0.3;
+  min-height: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 5px;
+  color: blue;
+}
+.weather-display .weather-card .temperature {
+  padding: 2rem;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

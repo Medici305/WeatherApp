@@ -27,7 +27,13 @@ header {
     text-decoration: line-through;
     font-weight: 300;
   }
+  .date-display {
+    padding: .5rem;
+    color: rgb(125, 124, 124);
+    font-weight: 500;
+  }
   .time-display {
+    padding: .5rem;
     color: #fff;
     font-weight: 700;
   }
@@ -56,12 +62,26 @@ header {
 }
 
 .weather-display {
+  //@include backgroundImage('../resources/images/ink-drop.jpg', center, cover);
   background: black;
-  min-height: 70vh;
-  @include flex();
+  min-height: 66vh;
+  @include flex(flex, row, center, center);
   .weather-card {
-    width: 50%;
-    height: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    @include flex(flex, column, center, center);
     background: #fff;
+    flex: 0.3;
+    min-height: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 5px;
+    color: blue;
+    .city-name {
+    }
+    .weather-description {
+    }
+    .temperature {
+      padding: 2rem;
+      font-size: 3rem;
+    }
   }
 }
